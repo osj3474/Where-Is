@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- jQuery가 먼저 import되어야 -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+    <!-- 아래 import 하는데 error 안뜸. 부트스트랩 쓰기 위해 jQuery가 필요해서 -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+
+    <!-- 부트스트랩 위해서 추가한 코드 start-->
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css"
+    />
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
+    <!-- 부트스트랩 위해서 추가한 코드 end-->
+
+    <link
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css"
+      rel="stylesheet"
+      id="bootstrap-css"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.1.0/css/all.css"
+      integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+      crossorigin="anonymous"
+    />
+
+    <!-- 개인적으로 css 코드 적용-->
+    <link href="./static/css/search.css" rel="stylesheet" />
+
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SearchOnce</title>
+  </head>
+  <body>
+    <div class="main-header">
+      <span class="main-header-text"> 웨어이즈 </span>
+    </div>
+    <div class="container">
+      <br />
+      <div class="row justify-content-center">
+        <div class="col-12 col-md-10 col-lg-8">
+          <form class="card card-sm">
+            <div class="search-body">
+              <div class="search-item search-icon">
+                <i class="fas fa-search h4 text-body"></i>
+              </div>
+              <!--end of col-->
+              <div class="search-item search-box">
+                <input
+                  class="form-control form-control-lg form-control-borderless"
+                  type="search"
+                  placeholder="Search topics or keywords"
+                />
+              </div>
+              <!--end of col-->
+              <div class="search-item search-now">
+                <button class="btn btn-lg btn-success" type="submit">
+                  Search
+                </button>
+              </div>
+              <!--end of col-->
+            </div>
+          </form>
+        </div>
+        <!--end of col-->
+      </div>
+    </div>
+  </body>
+</html>
