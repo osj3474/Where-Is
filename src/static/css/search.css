@@ -1,3 +1,10 @@
+/* <!-- 구글 폰트 --> */
+@import url("https://fonts.googleapis.com/css2?family=Sigmar+One&display=swap");
+
+body {
+  background-color: #f9f8f7;
+}
+
 .form-control-borderless {
   border: none;
 }
@@ -11,11 +18,14 @@
 }
 
 .search-body {
-  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-width: 100vh;
 }
 
 .search-item {
-  display: inline-block;
+  display: inline-block; /*이렇게 하면, text가 됨.*/
   margin: auto 10px;
 }
 
@@ -31,4 +41,21 @@
 
 .btn-success:hover {
   background-color: #2579fe;
+}
+
+.content {
+  text-align: center;
+  padding-top: 15vh; /* 화면 기준으로, 15%*/
+}
+
+.main-header {
+  font-family: "Sigmar One", cursive;
+  font-size: 40px;
+}
+
+.content-result {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 10px;
+  grid-auto-rows: minmax(100px, auto);
 }
